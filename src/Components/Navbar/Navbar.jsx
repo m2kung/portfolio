@@ -5,7 +5,7 @@ import underline from '../../assets/nav_underline.svg'
 import AnchorLink from 'react-anchor-link-smooth-scroll'
 import menu_open from '../../assets/menu_open.svg'
 import menu_close from '../../assets/menu_close.svg'
-import { Link } from 'react-router'
+// import { Link } from 'react-router'
 
 const Navbar = () => {
 

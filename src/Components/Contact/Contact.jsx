@@ -4,6 +4,8 @@ import theme_pattern from '../../assets/theme_pattern.svg'
 import mail_icon from '../../assets/mail_icon.svg'
 import location_icon from '../../assets/location_icon.svg'
 import call_icon from '../../assets/call_icon.svg'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faLinkedin, faSquareGithub } from '@fortawesome/free-brands-svg-icons';
 
 const Contact = () => {
 
@@ -45,10 +47,10 @@ const Contact = () => {
                         <img src={mail_icon} alt="" /><p>notamelon.e@gmail.com</p>
                     </div>
                     <div className="contact-detail">
-                        <img src={call_icon} alt="" /><p>(###) ###-####</p>
+                        <FontAwesomeIcon icon={faLinkedin} size="2x"/><a href="https://www.linkedin.com/in/melanie-kung/" target="_blank" rel="noopener noreferrer">melaniekung</a>
                     </div>
                     <div className="contact-detail">
-                        <img src={location_icon} alt="" /><p>Waterloo, ON</p>
+                        <FontAwesomeIcon icon={faSquareGithub} size="2x"/><a href="https://www.github.com/m2kung/" target="_blank" rel="noopener noreferrer">m2kung</a>
                     </div>
                 </div>
             </div>
