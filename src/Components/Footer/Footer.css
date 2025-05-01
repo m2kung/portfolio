@@ -87,3 +87,10 @@
         margin-bottom: 50px;
     }
 }
+
+span {
+    background: linear-gradient(270deg, #65b2e2  50%, #9d15ff 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
