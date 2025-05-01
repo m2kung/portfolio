@@ -2,17 +2,17 @@ const Services_Data = [
     {
         s_no:"01",
         s_name:"Classical Guitar",
-        s_desc:"RCM Level 10"
+        s_desc:"explore bach, scarlatti and more with me"
     },
     {
         s_no:"02",
         s_name:"3D Design",
-        s_desc:"SOLIDWORKS\nAutoCAD"
+        s_desc:"my journey through SOLIDWORKS and AUTOCAD"
     },
     {
         s_no:"03",
         s_name:"Programming",
-        s_desc:"Python\nHTML/CSS/Javascript"
+        s_desc:"discover as many languages as possible with me"
     },
     {
         s_no:"04",
