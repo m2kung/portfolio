@@ -18,7 +18,12 @@ const Projects = () => {
                 onMouseEnter={() => setIsHovered(true)}
                 onMouseLeave={() => setIsHovered(false)}>
                     {isHovered ? 
-                    <div className="work-container">{mywork_data.map((work,index) => {return <img src={work.w_img} alt="" />})} </div>: 
+                    <div className="work-container">{mywork_data.map((work,index) =>
+                      {const nextItem = mywork_data[index + 1];
+                        return nextItem ? (
+                        <img src={nextItem.w_img} alt="" />
+                      ) : null;
+                    })} </div>: 
                     <div className="work-container">{mywork_data.map((work,index)=>{return <img src={work.w_img} alt="" />})}</div>}
         </div>
         <div className="mywork-showmore">
