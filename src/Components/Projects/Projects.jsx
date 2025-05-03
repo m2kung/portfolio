@@ -1,37 +1,31 @@
-import React, {useState} from 'react'
+import React from 'react'
 import './Projects.css'
 import theme_pattern from '../../assets/theme_pattern.svg'
-import mywork_data from '../../assets/mywork_data'
+import Services_Data from '../../assets/experience_data'
 import arrow_icon from '../../assets/arrow_icon.svg'
 
-const Projects = () => {
-
-    const [isHovered, setIsHovered] = useState(false);
-
+const Resources = () => {
   return (
-    <div className='mywork' id='work'>
-        <div className="mywork-title">
-            <h1>resources & rec's</h1>
+    <div className='services' id='services'>
+        <div className="services-title">
+            <h1>experience & projects</h1>
             <img src={theme_pattern} alt="" />
         </div>
-        <div className="mywork-container"
-                onMouseEnter={() => setIsHovered(true)}
-                onMouseLeave={() => setIsHovered(false)}>
-                    {isHovered ? 
-                    <div className="work-container">{mywork_data.map((work,index) =>
-                      {const nextItem = mywork_data[index + 1];
-                        return nextItem ? (
-                        <img src={nextItem.w_img} alt="" />
-                      ) : null;
-                    })} </div>: 
-                    <div className="work-container">{mywork_data.map((work,index)=>{return <img src={work.w_img} alt="" />})}</div>}
-        </div>
-        <div className="mywork-showmore">
-            <p>Show More</p>
-            <img src={arrow_icon} alt="" />
+        <div className="services-container">
+            {Services_Data.map((service,index)=>{
+                return <div key={index} className="services-format">
+                    <h3>{service.s_no}</h3>
+                    <h2>{service.s_name}</h2>
+                    <p>{service.s_desc}</p>
+                    <div className="services-readmore">
+                        <p>Read More</p>
+                        <img src={arrow_icon} alt="" />
+                    </div>
+                </div>
+            })}
         </div>
     </div>
   )
 }
 
-export default Projects
+export default Resources
