@@ -50,6 +50,10 @@
 }
 
 .hero-resume {
+    font-size: 24px;
+    font-family: 'Outfit';
+    background-color: transparent;
+    color: white;
     padding: 25px 75px;
     border-radius: 50px;
     border: 2px solid #FFF;

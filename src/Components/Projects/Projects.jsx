@@ -14,6 +14,7 @@ const Resources = () => {
         <div className="services-container">
             {Services_Data.map((service,index)=>{
                 return <div key={index} className="services-format">
+                    <a className="anchor" href="https://google.com" target="_blank" rel="noopener noreferrer">
                     <h3>{service.s_no}</h3>
                     <h2>{service.s_name}</h2>
                     <p>{service.s_desc}</p>
@@ -21,6 +22,7 @@ const Resources = () => {
                         <p>Read More</p>
                         <img src={arrow_icon} alt="" />
                     </div>
+                    </a>
                 </div>
             })}
         </div>

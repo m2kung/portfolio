@@ -33,7 +33,7 @@ const Navbar = () => {
             {/* <li><AnchorLink className='anchor-link' offset={50} href='#contact'><p onClick={() => setMenu("contact")}>contact</p></AnchorLink>{menu === "contact" ? <img src={underline} alt="" /> : <></>}</li> */}
             <li><a className='anchor-link' href="https://medium.com/@melanikung" target="_blank" rel="noopener noreferrer">blog</a></li>
         </ul>
-        <div className="nav-connect"><AnchorLink className='anchor-link' offset={50} href='#contact' onClick={() => setMenu("contact")}>Connect With Me</AnchorLink></div>
+        <div className="nav-connect"><AnchorLink className='anchor-link' offset={50} href='#contact' onClick={() => setMenu("contact")}>connect</AnchorLink></div>
     </div>
   )
 }

@@ -35,7 +35,7 @@ const Contact = () => {
   return (
     <div className='contact' id='contact'>
         <div className="contact-title">
-            <h1>Get in touch</h1>
+            <h1>get in touch</h1>
             <img src={theme_pattern} alt="" />
         </div>
         <div className="contact-section">

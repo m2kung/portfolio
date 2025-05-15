@@ -4,6 +4,11 @@ import profile_img from '../../assets/profile_img.jpeg'
 import AnchorLink from 'react-anchor-link-smooth-scroll'
 
 const Hero = () => {
+
+  const handleOpenPdf = () => {
+    window.open('MKung_Resume.pdf', '_blank');
+  };
+
   return (
     <div className='hero' id='home'>
       <img src={profile_img} alt="" />
@@ -12,8 +17,10 @@ const Hero = () => {
       <p>full-time child of God <br></br>
       part-time musician, writer, traveller, coder, 3D designer</p>
       <div className="hero-action">
-        <div className="hero-connect"><AnchorLink className='anchor-link' offset={50} href='#contact'>Connect with me</AnchorLink></div>
-        <div className="hero-resume">My resume</div>
+        <div className="hero-connect"><AnchorLink className='anchor-link' offset={50} href='#contact'>connect with me</AnchorLink></div>
+        <button className="hero-resume" onClick={handleOpenPdf}>
+          my resume
+        </button>
       </div>
     </div>
   )
