@@ -16,9 +16,9 @@ const About = () => {
             </div>
             <div className="about-right">
                 <div className="about-paragraph">
-                    <p>hi there! i'm melanie, a second year nanotechnology engineering at the university of waterloo with a particular interest in materials sciences and quantum mechancics.<br />
-                    hobby musician, typer, and reader.<br />
-                    passionate about good views, good food, and good organization.</p>
+                    <p>hi there! i'm melanie, a second year nanotechnology engineering at the university of waterloo with a particular interest in materials sciences and quantum mechancics.</p>
+                    <p>hobby musician, typer, and reader.</p>
+                    <p>passionate about good views, good food, and good organization.</p>
                 </div>
                 <div className="about-skills">
                     <div className="about-skill"><p>HTML & CSS</p><hr style={{width:"50%"}}/></div>
@@ -30,18 +30,39 @@ const About = () => {
         </div>
         <div className="about-achievements">
                 <div className="about-achievement">
-                    <p>GALATIANS</p>
-                    <h1>2:20</h1>
+                    <div className="about-achievement-inner">
+                        <div className="about-achievement-front">
+                            <p>GALATIANS</p>
+                            <h1>2:20</h1>
+                        </div>
+                        <div className="about-achievement-back">
+                            I have been crucified with Christ. It is no longer I who live, but Christ who lives in me. And the life I now live in the flesh I live by faith in the Son of God, who loved me and gave himself for me.
+                        </div>
+                    </div>
                 </div>
                 <hr />
                 <div className="about-achievement">
-                    <p>PSALM</p>
-                    <h1>16:5</h1>
+                    <div className="about-achievement-inner">
+                        <div className="about-achievement-front">
+                            <p>PSALM</p>
+                            <h1>16:5</h1>
+                        </div>
+                        <div className="about-achievement-back">
+                            The Lord is my chosen portion and my cup; <br></br> you hold my lot.
+                        </div>
+                    </div>
                 </div>
                 <hr />
                 <div className="about-achievement">
-                    <p>JUDE</p>
-                    <h1>24-25</h1>
+                    <div className="about-achievement-inner">
+                        <div className="about-achievement-front">
+                            <p>JUDE</p>
+                            <h1>24-25</h1>
+                        </div>
+                        <div className="about-achievement-back">
+                            Now to him who is able to keep you from stumbling and to present you blameless before the presence of his glory with great joy, to the only God, our Savior, through Jesus Christ our Lord, be glory, majesty, dominion, and authority, before all time and now and forever. Amen.
+                        </div>
+                    </div>
                 </div>
         </div>
     </div>
