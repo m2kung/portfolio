@@ -87,6 +87,7 @@
     position: relative;
     flex-direction: column;
     width: 300px;
+    height: 150px;
     text-align: center;
     align-items: center;
     gap: 10px;
@@ -97,6 +98,7 @@
     font-size: 16px;
     position: relative;
     width: 100%;
+    height: 100%;
     transition: transform 1.0s;
     transform-style: preserve-3d;
 }
@@ -111,13 +113,15 @@
 
 .about-achievement-back p {
     font-size: 16px;
+    text-align: center;
+    align-items: center;
 }
 
 .about-achievement-front, .about-achievement-back {
     backface-visibility: hidden;
     position: absolute;
     width: 100%;
-    /* height: 100%; */
+    height: 100%;
 
     display: flex;
     flex-direction: column;

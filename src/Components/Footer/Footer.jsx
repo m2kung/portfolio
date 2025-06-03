@@ -8,8 +8,8 @@ const Footer = () => {
     <div className='footer'>
         <div className="footer-top">
             <div className="footer-top-left">
-                <img src={footer_logo} alt="" />
-                <p></p>
+                {/* <img src="./favicon-32x32.png" alt="" /> */}
+                <p>🍉</p>
             </div>
             <div className="footer-top-right">
                 <div className="footer-email-input">
@@ -24,7 +24,7 @@ const Footer = () => {
             <p className="footer-bottom-left">✞<br></br>soli deo gloria</p>
             <div className="footer-bottom-right">
                 <p>"My flesh and my heart may fail, <br></br>
-                    but <span>God is the strength of my heart</span> and my portion forever." <br />~Ps. 23:76 ESV</p>
+                    but <span>God is the strength of my heart</span> and my portion forever." <br />~Ps. 76:23 ESV</p>
             </div>
         </div>
     </div>

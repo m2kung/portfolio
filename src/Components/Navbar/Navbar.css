@@ -3,6 +3,10 @@
     align-items: center;
     justify-content: space-between;
     margin: 20px 170px;
+    position: sticky;
+    top: 0px;
+    padding: 10px;
+    background-color: #161513;
 }
 
 .nav-menu {
