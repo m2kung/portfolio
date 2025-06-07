@@ -80,7 +80,6 @@
     display: flex;
     width: 100%;
     justify-content: space-around;
-    margin-bottom: 80px;
 }
 
 .about-achievement {
@@ -91,7 +90,6 @@
     text-align: center;
     align-items: center;
     gap: 10px;
-
 }
 
 .about-achievement-inner {

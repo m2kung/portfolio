@@ -30,40 +30,10 @@
     gap: 40px;
 }
 
-.work-inner {
+.mywork {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 40px;
-    
-    transition: transform 1.0s;
-    transform-style: preserve-3d;
-}
-
-.work-detail:hover .work-inner {
-  transform: rotateY(180deg);
-}
-
-.work-back {
-    transform: rotateY(180deg);
-}
-
-.work-back p {
-    font-size: 16px;
-    text-align: center;
-    align-items: center;
-}
-
-.work-front, .work-back {
-    backface-visibility: hidden;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
 }
 
 .mywork-container img {
