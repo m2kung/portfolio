@@ -57,6 +57,7 @@
 
 .footer-bottom-right { 
     display: flex;
+    width: 300px;
     gap: 50px;
     margin-bottom: 50px;
     text-align: right;
