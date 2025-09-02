@@ -6,7 +6,7 @@
     position: sticky;
     top: 0px;
     padding: 10px;
-    background-color: #161513;
+    background-color: var(--bkg-color);
     z-index: 10;
 }
 

@@ -1,3 +1,10 @@
+:root {
+	/* Colors */
+	--bkg-color: #0f061a;
+	
+	color-scheme: light dark;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -5,7 +12,7 @@
 
 body {
     height: 100vh;
-    background: #161513;
+    background: var(--bkg-color);
     color: white;
     font-family: 'outfit';
 }

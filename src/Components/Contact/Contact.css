@@ -4,7 +4,7 @@
     align-items: center;
     justify-content: center;
     gap: 80px;
-    margin: 80px 170px;
+    margin: 80px 200px;
 }
 
 .contact-title {
@@ -85,7 +85,7 @@
 
 .contact-right input {
     border: none;
-    width: 700px;
+    width: 600px;
     height: 78px;
     padding-left: 20px;
     border-radius: 4px;
@@ -96,7 +96,7 @@
 }
 
 .contact-right textarea {
-    width: 650px;
+    width: 575px;
     border: none;
     padding: 25px;
     border-radius: 4px;
