@@ -16,8 +16,8 @@ const About = () => {
             </div>
             <div className="about-right">
                 <div className="about-paragraph">
-                    <p>hi there! i'm melanie, a second year nanotechnology engineering at the university of waterloo with a particular interest in materials sciences and quantum mechancics.</p>
-                    <p>hobby musician, typer, and reader.</p>
+                    <p>hi there! i'm melanie, a second year nanotechnology engineering student at the university of waterloo with a particular interest in materials sciences and quantum mechancics.</p>
+                    <p>in my free time, i'm a hobby musician, typer, and reader.</p>
                     <p>passionate about good views, good food, and good organization.</p>
                 </div>
                 <div className="about-skills">
