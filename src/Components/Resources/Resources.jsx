@@ -18,7 +18,7 @@ const Projectstest = () => {
           })}
       </div>
       <div className="mywork-showmore">
-            <p>Show More</p>
+            <p>show more</p>
             <img src={arrow_icon} alt="" />
       </div>
     </div> 

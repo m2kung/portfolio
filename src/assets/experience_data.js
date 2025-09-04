@@ -1,17 +1,17 @@
 const Services_Data = [
     {
         s_no:"01",
-        s_name:"Classical Guitar",
+        s_name:"classical guitar",
         s_desc:"explore bach, scarlatti and more with me"
     },
     {
         s_no:"02",
-        s_name:"3D Design",
+        s_name:"3D design",
         s_desc:"my journey through SOLIDWORKS and AUTOCAD"
     },
     {
         s_no:"03",
-        s_name:"Programming",
+        s_name:"programming",
         s_desc:"discover as many languages as possible with me"
     },
     {

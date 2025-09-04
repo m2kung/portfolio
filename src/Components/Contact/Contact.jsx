@@ -40,7 +40,7 @@ const Contact = () => {
         </div>
         <div className="contact-section">
             <div className="contact-left">
-                <h1>Let's talk</h1>
+                <h1>let's talk</h1>
                 <p>yap with me</p>
                 <div className="contact-details">
                     <div className="contact-detail">
@@ -55,13 +55,13 @@ const Contact = () => {
                 </div>
             </div>
             <form onSubmit={onSubmit} className="contact-right">
-                <label htmlFor="">Your Name</label>
-                <input type="text" placeholder="Enter your name" name="name" />
-                <label htmlFor="">Your Email</label>
-                <input type="email" placeholder="Enter your email" name="email"/>
-                <label htmlFor="">Write your message here</label>
-                <textarea name="message" rows="8" placeholder="Enter your message"></textarea>
-                <button type="submit" className="contact-submit">Submit now</button>
+                <label htmlFor="">your name</label>
+                <input type="text" placeholder="enter your name" name="name" />
+                <label htmlFor="">your email</label>
+                <input type="email" placeholder="enter your email" name="email"/>
+                <label htmlFor="">write your message here</label>
+                <textarea name="message" rows="8" placeholder="enter your message"></textarea>
+                <button type="submit" className="contact-submit">submit now</button>
             </form>
         </div>
     </div>
