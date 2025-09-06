@@ -10,7 +10,7 @@ const Hero = () => {
   };
 
   return (
-    <div className='hero' id='hero'>
+    <div className='hero' id='home'>
       <img src={profile_img} alt="" />
       <h1><span>hi.</span> i'm melanie</h1>
       <h2>aka notamelon.e</h2>

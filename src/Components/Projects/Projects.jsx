@@ -3,6 +3,7 @@ import './Projects.css'
 import theme_pattern from '../../assets/theme_pattern.svg'
 import Services_Data from '../../assets/experience_data'
 import arrow_icon from '../../assets/arrow_icon.svg'
+import { Link } from 'react-router-dom'
 
 const Resources = () => {
   return (
@@ -12,19 +13,34 @@ const Resources = () => {
             <img src={theme_pattern} alt="" />
         </div>
         <div className="services-container">
-            {Services_Data.map((service,index)=>{
-                return <div key={index} className="services-format">
-                    <a className="anchor" href="https://google.com" target="_blank" rel="noopener noreferrer">
-                    <h3>{service.s_no}</h3>
-                    <h2>{service.s_name}</h2>
-                    <p>{service.s_desc}</p>
-                    <div className="services-readmore">
-                        <p>Read More</p>
-                        <img src={arrow_icon} alt="" />
-                    </div>
-                    </a>
+            {Services_Data.slice(0, 3).map((service, index) => (
+                <div key={index} className="services-format">
+                    <Link className="anchor" to={service.s_link}>
+                        <h3>{service.s_no}</h3>
+                        <h2>{service.s_name}</h2>
+                        <p>{service.s_desc}</p>
+                        <div className="services-readmore">
+                            <p>Read More</p>
+                            <img src={arrow_icon} alt="" />
+                        </div>
+                    </Link>
                 </div>
-            })}
+            ))}
+        </div>
+        <div className="services-bottom-row">
+            {Services_Data.slice(3, 5).map((service, index) => (
+                <div key={index + 3} className="services-format">
+                    <Link className="anchor" to={service.s_link}>
+                        <h3>{service.s_no}</h3>
+                        <h2>{service.s_name}</h2>
+                        <p>{service.s_desc}</p>
+                        <div className="services-readmore">
+                            <p>Read More</p>
+                            <img src={arrow_icon} alt="" />
+                        </div>
+                    </Link>
+                </div>
+            ))}
         </div>
     </div>
   )
