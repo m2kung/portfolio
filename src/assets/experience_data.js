@@ -25,9 +25,9 @@ const Services_Data = [
     },
     {
         s_no:"05",
-        s_name:"views",
+        s_name:"travel",
         s_desc:"sometimes i like to explore",
-        s_link: "/views"
+        s_link: "/travel"
     },
     // {
     //     s_no:"06",

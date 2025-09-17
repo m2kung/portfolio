@@ -29,6 +29,11 @@
     background: #32323b;
     padding-right: 80px;
     border: 2px solid transparent;
+    transition: 0.3s;
+}
+
+.footer-email-input:hover {
+    transform: scale(1.05);
 }
 
 .footer-email-input input { 
