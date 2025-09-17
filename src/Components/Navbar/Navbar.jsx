@@ -33,11 +33,11 @@ AnchorLink
             <li>
               {isHomePage ? (
                 <AnchorLink className='anchor-link' href="#home" offset={50}>
-                  <p onClick={() => setMenu("home")}>home</p>
+                  <p onClick={() => { setMenu("home"); window.scrollTo({top: 0, behavior: 'smooth'}); }}>home</p>
                 </AnchorLink>
               ) : (
                 <Link className='anchor-link' to="/">
-                  <p onClick={() => setMenu("home")}>home</p>
+                  <p onClick={() => { setMenu("home"); window.scrollTo({top: 0, behavior: 'smooth'}); }}>home</p>
                 </Link>
               )}
               {menu === "home" ? <img src={underline} alt="" /> : <></>}
