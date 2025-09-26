@@ -17,7 +17,9 @@
 
 .nav-menu {
     display: flex;
-    align-items: baseline;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
     list-style: none;
     margin-top: 15px;
     gap: 45px;
@@ -73,7 +75,13 @@
 
 @media(max-width:768px) {
     .navbar {
-        margin: 20px 50px;
+        margin: 0;
+        width: 100vw;
+        left: 0;
+        right: 0;
+        top: 0;
+        position: fixed;
+        border-radius: 0;
     }
 
     .nav-connect {
@@ -89,17 +97,19 @@
 
     .nav-mob-close {
         display: block;
-        position: relative;
-        top: 30px;
-        left: 150px;
+        position: fixed;
+        top: 20px;
+        right: 20px;
         width: 30px;
         cursor: pointer;
+        z-index: 101;
     }
 
     .nav-menu {
         position: fixed;
         flex-direction: column;
         align-items: center;
+        margin-top: 0px;
         top: 0;
         gap: 30px;
         background-color: #1f0016;
@@ -115,5 +125,7 @@
         padding-left: 100px;
         flex-direction: row;
         gap: 20px;
+        justify-content: center;
+        align-items: center;
     }
 }

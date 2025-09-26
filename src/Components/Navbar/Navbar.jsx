@@ -29,7 +29,7 @@ AnchorLink
         <img className='logo' src="./favicon-32x32.png" alt="" />
         <img src={menu_open} onClick={openMenu} alt="" className='nav-mob-open' />
         <ul ref={menuRef} className="nav-menu">
-            
+            <img src={menu_close} onClick={closeMenu} alt="" className="nav-mob-close" />
             <li>
               {isHomePage ? (
                 <AnchorLink className='anchor-link' href="#home" offset={50}>
@@ -43,9 +43,6 @@ AnchorLink
               {menu === "home" ? <img src={underline} alt="" /> : <></>}
             </li>
 
-            <img src={menu_close} onClick={closeMenu} alt="" className="nav-mob-close" />
-            {/* <li><AnchorLink className='anchor-link' href='#home'><p onClick={() => setMenu("home")}>home</p></AnchorLink>{menu === "home" ? <img src={underline} alt="" /> : <></>}</li> */}
-            {/* <li><Link className='anchor-link' to="/home"><p onClick={() => setMenu("home")}>home</p></Link>{menu === "home" ? <img src={underline} alt="" /> : <></>}</li> */}
             <li><AnchorLink className='anchor-link' offset={50} href='#about'><p onClick={() => setMenu("about")}>about</p></AnchorLink>{menu === "about" ? <img src={underline} alt="" /> : <></>}</li>
             <li><AnchorLink className='anchor-link' offset={50} href='#services'><p onClick={() => setMenu("services")}>my work</p></AnchorLink>{menu === "services" ? <img src={underline} alt="" /> : <></>}</li>
             <li><AnchorLink className='anchor-link' offset={50} href='#resources'><p onClick={() => setMenu("resources")}>my stuff</p></AnchorLink>{menu === "resources" ? <img src={underline} alt="" /> : <></>}</li>
