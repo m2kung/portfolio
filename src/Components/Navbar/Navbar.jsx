@@ -22,8 +22,22 @@ const Navbar = () => {
 
   const location = useLocation();
   const isHomePage = location.pathname === '/';
+  const isGuitarPage = location.pathname === '/guitar';
+  const isResourcesPage = location.pathname === '/resources';
 
-AnchorLink
+  React.useEffect(() => {
+    if (isGuitarPage) {
+      setMenu("resources");
+    }
+  }, [isGuitarPage]);
+
+    React.useEffect(() => {
+    if (isResourcesPage) {
+      setMenu("resources");
+    }
+  }, [isResourcesPage]);
+
+
   return (
     <div className='navbar'>
         <img className='logo' src="./favicon-32x32.png" alt="" />
@@ -43,11 +57,9 @@ AnchorLink
               {menu === "home" ? <img src={underline} alt="" /> : <></>}
             </li>
 
-            <li><AnchorLink className='anchor-link' offset={50} href='#about'><p onClick={() => setMenu("about")}>about</p></AnchorLink>{menu === "about" ? <img src={underline} alt="" /> : <></>}</li>
-            <li><AnchorLink className='anchor-link' offset={50} href='#services'><p onClick={() => setMenu("services")}>my work</p></AnchorLink>{menu === "services" ? <img src={underline} alt="" /> : <></>}</li>
-            <li><AnchorLink className='anchor-link' offset={50} href='#resources'><p onClick={() => setMenu("resources")}>my stuff</p></AnchorLink>{menu === "resources" ? <img src={underline} alt="" /> : <></>}</li>
-            {/* <Link className='anchor-link' to="/resources">Resources</Link> */}
-            {/* <li><AnchorLink className='anchor-link' offset={50} href='#contact'><p onClick={() => setMenu("contact")}>contact</p></AnchorLink>{menu === "contact" ? <img src={underline} alt="" /> : <></>}</li> */}
+            <li><AnchorLink className='anchor-link' offset={50} href='#about'><p onClick={() => setMenu("about")}>about</p></AnchorLink>{(menu === "about" && !isGuitarPage) ? <img src={underline} alt="" /> : <></>}</li>
+            <li><AnchorLink className='anchor-link' offset={50} href='#services'><p onClick={() => setMenu("services")}>my work</p></AnchorLink>{(menu === "services" || isGuitarPage) ? <img src={underline} alt=""/> : <></>}</li>
+            <li><AnchorLink className='anchor-link' offset={50} href='#resources'><p onClick={() => setMenu("resources")}>my stuff</p></AnchorLink>{(menu === "resources" && !isGuitarPage) ? <img src={underline} alt="" /> : <></>}</li>
             <li><a className='anchor-link' href="https://medium.com/@melanikung" target="_blank" rel="noopener noreferrer">blog</a></li>
         </ul>
         <div className="nav-connect"><AnchorLink className='anchor-link' offset={50} href='#contact' onClick={() => setMenu("contact")}><p>connect</p></AnchorLink>{menu=="contact" ? <img src={underline} alt=""/> : <></>}</div>
