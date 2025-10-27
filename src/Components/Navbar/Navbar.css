@@ -7,6 +7,11 @@
     padding: 20px 30px;
     background: #0F061A;
     background: linear-gradient(0deg,rgba(15, 6, 26, 1) 0%, rgba(0, 71, 97, 1) 115%);
+    /* allow easy tuning of the underline color separate from text color */
+    --nav-underline-color: #00bbff;
+    /* how much of the navbar should remain visible when collapsed (height in px) */
+    --nav-visible-height: 30px;
+    transition: transform 280ms ease, opacity 220ms ease;
     z-index: 10;
 }
 
@@ -62,6 +67,34 @@
 .nav-menu li img {
     display: flex;
     margin: auto;
+}
+
+.nav-menu li.active p {
+    text-decoration: underline;
+    text-underline-offset: 8px;
+    text-decoration-thickness: 5px;
+    /* underline color separate from text color */
+    text-decoration-color: var(--nav-underline-color);
+}
+
+/* collapsed (hidden) navbar when user scrolls down */
+.navbar.collapsed {
+    /* move up but leave a visible bottom strip (controlled by --nav-visible-height) */
+    transform: translateY(calc(-100% + var(--nav-visible-height)));
+    opacity: 1;
+}
+
+/* When collapsed, keep the large menu area non-interactive but allow the visible
+   bottom controls (connect / mobile-open) to remain clickable. Also dim hidden parts. */
+
+.navbar.collapsed .logo, .navbar.collapsed .nav-connect {
+    pointer-events: none;
+    opacity: 0;
+}
+
+.navbar.collapsed .nav-mob-open {
+    pointer-events: auto;
+    opacity: 1;
 }
 
 .anchor-link {

@@ -3,6 +3,7 @@
     display: flex;
     flex-direction: column;
     gap: 30px;
+    padding-bottom: 30px;
 }
 
 .footer-top { 
@@ -57,6 +58,7 @@
 .footer-bottom { 
     display: flex;
     justify-content: space-between;
+    align-items: flex-end; /* align left text to bottom of footer */
     font-size: 18px;
 }
 
@@ -64,7 +66,7 @@
     display: flex;
     width: 300px;
     gap: 50px;
-    margin-bottom: 50px;
+    margin-bottom: 0; /* ensure this block doesn't push itself down */
     text-align: right;
 }
 
