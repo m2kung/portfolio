@@ -71,7 +71,9 @@ const Navbar = () => {
 
   return (
     <div className={`navbar ${collapsed ? 'collapsed' : ''}`}>
-        <img className='logo' src="./favicon-32x32.png" alt="" />
+        <AnchorLink className='anchor-link' href="#home" offset={50}>
+          <img className='logo' src="./favicon-32x32.png" alt="" />
+        </AnchorLink>
         <img src={menu_open} onClick={openMenu} alt="" className='nav-mob-open' />
         <ul ref={menuRef} className="nav-menu">
             <img src={menu_close} onClick={closeMenu} alt="" className="nav-mob-close" />
