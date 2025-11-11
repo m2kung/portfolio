@@ -9,6 +9,8 @@ import Footer from './Components/Footer/Footer'
 import Home from './Home'
 import ResourcesPage from './Components/Resources/ResourcesPage'
 import Guitar from './Components/Projects/Guitar'
+import Programming from './Components/Projects/Programming'
+import Travel from './Components/Projects/Travel'
 
 import { Route, Routes } from "react-router-dom";
 
@@ -21,6 +23,8 @@ const App = () => {
           <Route path="/" element={<Home />} />
           <Route path="/guitar" element={<Guitar />} />
           <Route path="/Resources" element={<ResourcesPage />} />
+          <Route path="/programming" element={<Programming />} />
+          <Route path="/travel" element={<Travel />} />
         </Routes>
         <Footer />
 

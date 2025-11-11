@@ -1,0 +1,168 @@
+.guitar {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.header h1 {
+    text-align: center;
+    width: 100%;
+    font-size: 90px;
+    font-weight: 600;
+    margin-left: auto;
+    margin-right: auto;
+
+
+.albums-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    width: 100%;
+    max-width: 1100px;
+    margin: 40px 20px;
+}
+
+.album-card {
+    display: flex;
+    flex-direction: column;
+    background: #1b0b1f;
+    border-radius: 12px;
+    overflow: hidden;
+    padding: 0;
+    border: 1px solid rgba(255,255,255,0.04);
+    cursor: pointer;
+}
+
+.album-cover {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    display: block;
+    background: linear-gradient(180deg, #2a1a2b, #1b0b1f);
+}
+
+.album-cover.placeholder {
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color: #ddd;
+    font-weight:600;
+    height:160px;
+}
+
+.album-title {
+    padding: 14px;
+    font-size: 18px;
+    text-align: center;
+    color: #fff;
+}
+
+/* modal / lightbox */
+.album-modal {
+    position: fixed;
+    inset: 0;
+    z-index: 2000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.album-backdrop {
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.6);
+}
+
+.album-content {
+    position: relative;
+    z-index: 2001;
+    max-width: 90%;
+    max-height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.modal-gallery { display:flex; align-items:center; gap:12px; }
+
+.modal-photo { max-width: 100%; max-height: 70vh; border-radius: 8px; }
+
+.modal-nav { background: rgba(255,255,255,0.06); color: white; border: none; font-size: 32px; padding: 12px 16px; border-radius: 8px; cursor: pointer; }
+.modal-close { position: absolute; right: -10px; top: -10px; background: #111; color: white; border: none; font-size: 28px; width:40px; height:40px; border-radius:20px; cursor:pointer; }
+
+.modal-caption { margin-top: 12px; color: #ddd; }
+
+@media(max-width:768px) {
+    .album-cover { height: 140px }
+}
+}
+
+.header p {
+    width: 50%;
+    text-align: center;
+    font-size: 24px;
+    line-height: 40px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.videos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 170px;
+    margin-bottom: 30px;
+}
+
+.videos h1 {
+    margin-top: 30px;
+    font-size: 60px;
+}
+
+.guitar-carousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 2rem;
+}
+
+.guitar-video-description {
+    margin-top: 10px;
+    max-width: 720px;
+    width: 100%;
+    text-align: center;
+    color: #dcdcdc;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.guitar-arrow-btn {
+    height: 315px;
+    width: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    background: linear-gradient(270deg, #2f86bc 10%, #9d15ff 100%);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 0;
+    min-width: 32px;
+    min-height: 315px;
+    box-sizing: border-box;
+}
+
+@media(max-width:768px) {
+    .guitar {
+        margin-top: 100px;
+    }
+
+    .header h1 {
+        font-size: 70px;
+    }
+}

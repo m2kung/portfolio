@@ -5,18 +5,22 @@ const videoData = [
   {
     label: 'contemporary',
     src: 'https://www.youtube.com/embed/I-TNrXt5RYc?si=VGqVDNrRxd8E-wId',
+    description: 'insert blurb here'
   },
   {
     label: 'contemporary',
     src: 'https://www.youtube.com/embed/mqBUrLqBp40?si=8a1CI25OjgYgRip2',
+    description: 'insert blurb here2'
   },
   {
     label: 'classical',
     src: 'https://www.youtube.com/embed/bOSkfaEUb-4?si=5WDkuDyT-nRj3QwA',
+    description: 'insert blurb here3'
   },
   {
     label: 'baroque',
     src: 'https://www.youtube.com/embed/-5BMBPBAwYc?si=45FOnoamE6zCI5rA',
+    description: 'insert blurb here4'
   },
 ];
 
@@ -51,6 +55,9 @@ const Guitar = () => {
             ></iframe>
           </div>
           <button className="guitar-arrow-btn" onClick={nextVideo} aria-label="Next video">&#x25B6;</button>
+        </div>
+        <div className="guitar-video-description">
+          <p>{videoData[current].description}</p>
         </div>
       </div>
     </div>
