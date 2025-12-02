@@ -89,11 +89,23 @@ const Travel = () => {
           <div className="album-backdrop" onClick={closeModal} />
           <div className="album-content">
             <button className="modal-close" onClick={closeModal} aria-label="Close">×</button>
-            <div className="modal-gallery">
-              <button className="modal-nav left" onClick={prevPhoto} aria-label="Previous">‹</button>
-              <img src={openAlbum.photos[activeIndex]} alt={`${openAlbum.title} ${activeIndex+1}`} className="modal-photo" onError={(e)=>{e.currentTarget.classList.add('broken')}} />
-              <button className="modal-nav right" onClick={nextPhoto} aria-label="Next">›</button>
+            {/* Preview + thumbnails grid (click thumb to change preview) */}
+            <div className="modal-preview">
+              <img src={openAlbum.photos[activeIndex]} alt={`${openAlbum.title} ${activeIndex+1}`} className="modal-photo large" onError={(e)=>{e.currentTarget.classList.add('broken')}} />
             </div>
+
+            <div className="modal-thumbs-grid">
+              {openAlbum.photos.map((p, i) => (
+                <button
+                  key={i}
+                  className={"thumb" + (i === activeIndex ? ' selected' : '')}
+                  onClick={() => setActiveIndex(i)}
+                  aria-label={`View photo ${i + 1}`}>
+                  <img src={p} alt={`${openAlbum.title} ${i+1}`} />
+                </button>
+              ))}
+            </div>
+
             <div className="modal-caption">{openAlbum.title} — {activeIndex + 1} / {openAlbum.photos.length}</div>
           </div>
         </div>
