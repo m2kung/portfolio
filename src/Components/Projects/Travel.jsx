@@ -7,10 +7,10 @@ import './Travel.css'
 
 const albums = [
   {
-    id: 'paris',
-    title: 'Paris 2024',
-    cover: '/albums/paris/cover.jpg',
-    photos: ['/albums/paris/1.jpg', '/albums/paris/2.jpg', '/albums/paris/3.jpg']
+    id: 'vancouver',
+    title: 'Vancouver W2025',
+    cover: '/albums/vancouver/cover.jpg',
+    photos: ['/albums/vancouver/1.jpg', '/albums/vancouver/2.jpg', '/albums/vancouver/3.jpg']
   },
   {
     id: 'tokyo',
