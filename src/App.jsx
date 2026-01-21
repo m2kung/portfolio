@@ -11,6 +11,7 @@ import ResourcesPage from './Components/Resources/ResourcesPage'
 import Guitar from './Components/Projects/Guitar'
 import Programming from './Components/Projects/Programming'
 import Travel from './Components/Projects/Travel'
+import Food from './Components/Projects/Food'
 
 import { Route, Routes } from "react-router-dom";
 
@@ -25,6 +26,7 @@ const App = () => {
           <Route path="/Resources" element={<ResourcesPage />} />
           <Route path="/programming" element={<Programming />} />
           <Route path="/travel" element={<Travel />} />
+          <Route path="/food" element={<Food />} />
         </Routes>
         <Footer />
 

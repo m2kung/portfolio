@@ -9,7 +9,7 @@ const Resources = () => {
   return (
     <div className='services' id='services'>
         <div className="services-title">
-            <h1>experience & projects</h1>
+            <h1>archives</h1>
             <img src={theme_pattern} alt="" />
         </div>
         <div className="services-container">
