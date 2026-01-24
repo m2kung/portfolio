@@ -10,7 +10,7 @@ const Projectstest = () => {
   return (
     <div className='mywork' id='resources'>
       <div className="mywork-title">
-            <h1>tidbits</h1>
+            <h1>tidbits & timbits</h1>
             <img src={theme_pattern} alt="" />
       </div>
       <div className="mywork-container">

@@ -29,38 +29,38 @@ const About = () => {
                 </div>
             </div>
         </div>
-        <div className="about-achievements">
-                <div className="about-achievement">
-                    <div className="about-achievement-inner">
-                        <div className="about-achievement-front">
+        <div className="about-verses">
+                <div className="about-verse">
+                    <div className="about-verse-inner">
+                        <div className="about-verse-front">
                             <p>GALATIANS</p>
                             <h1>2:20</h1>
                         </div>
-                        <div className="about-achievement-back">
+                        <div className="about-verse-back">
                             I have been crucified with Christ. It is no longer I who live, but Christ who lives in me. And the life I now live in the flesh I live by faith in the Son of God, who loved me and gave himself for me.
                         </div>
                     </div>
                 </div>
                 <hr />
-                <div className="about-achievement">
-                    <div className="about-achievement-inner">
-                        <div className="about-achievement-front">
+                <div className="about-verse">
+                    <div className="about-verse-inner">
+                        <div className="about-verse-front">
                             <p>PSALM</p>
                             <h1>16:5</h1>
                         </div>
-                        <div className="about-achievement-back">
+                        <div className="about-verse-back">
                             The Lord is my chosen portion and my cup; <br></br> you hold my lot.
                         </div>
                     </div>
                 </div>
                 <hr />
-                <div className="about-achievement">
-                    <div className="about-achievement-inner">
-                        <div className="about-achievement-front">
+                <div className="about-verse">
+                    <div className="about-verse-inner">
+                        <div className="about-verse-front">
                             <p>JUDE</p>
                             <h1>24-25</h1>
                         </div>
-                        <div className="about-achievement-back">
+                        <div className="about-verse-back">
                             Now to him who is able to keep you from stumbling and to present you blameless before the presence of his glory with great joy, to the only God, our Savior, through Jesus Christ our Lord, be glory, majesty, dominion, and authority, before all time and now and forever. Amen.
                         </div>
                     </div>

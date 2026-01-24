@@ -130,9 +130,9 @@
 
     .nav-mob-close {
         display: block;
-        position: fixed;
-        top: 20px;
-        right: 20px;
+        position: absolute;
+        top: 30px;
+        right: 30px;
         width: 30px;
         cursor: pointer;
         z-index: 101;

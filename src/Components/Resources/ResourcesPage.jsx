@@ -41,16 +41,16 @@ const ResourcesPage = () => {
         </div>
       </div>
       <div className="resources-section">
-        <h1>good reads</h1>
+        <h1>my good reads</h1>
         <ul>
           <li>
             <a href="https://www.goodreads.com/book/show/4671.The_Great_Gatsby" target="_blank" rel="noopener noreferrer">
-              The Great Gatsby
+              The Portrait of Dorian Gray
             </a>
           </li>
           <li>
             <a href="https://www.goodreads.com/book/show/2657.To_Kill_a_Mockingbird" target="_blank" rel="noopener noreferrer">
-              To Kill a Mockingbird
+              The Life of Pi
             </a>
           </li>
           <li>

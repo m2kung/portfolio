@@ -22,6 +22,11 @@ const videoData = [
     src: 'https://www.youtube.com/embed/-5BMBPBAwYc?si=45FOnoamE6zCI5rA',
     description: 'insert blurb here4'
   },
+  {
+    label: 'arct',
+    src: '',
+    description: 'coming soon'
+  },
 ];
 
 const Guitar = () => {
