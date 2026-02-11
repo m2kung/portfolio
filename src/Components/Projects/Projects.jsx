@@ -17,7 +17,7 @@ const Resources = () => {
                 <div key={index} className="services-format">
                     <Link className="anchor" to={service.s_link}>
                         <h3>{service.s_no}</h3>
-                        <h2>{service.s_name}</h2>
+                        <h2 style={{ fontSize: service.s_font_size }}>{service.s_name}</h2>
                         <p>{service.s_desc}</p>
                         <div className="services-readmore">
                             <p>see more</p>
@@ -32,7 +32,7 @@ const Resources = () => {
                 <div key={index + 3} className="services-format">
                     <Link className="anchor" to={service.s_link}>
                         <h3>{service.s_no}</h3>
-                        <h2>{service.s_name}</h2>
+                        <h2 style={{ fontSize: service.s_font_size }}>{service.s_name}</h2>
                         <p>{service.s_desc}</p>
                         <div className="services-readmore">
                             <p>Read More</p>

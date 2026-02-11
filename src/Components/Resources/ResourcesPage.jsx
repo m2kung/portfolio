@@ -37,6 +37,22 @@ const ResourcesPage = () => {
                 ></iframe>
               </div>
             </div>
+
+            <div className="spotify-wrapper">
+              <div className="spotify-embed">
+                <h2>peas & pods</h2>
+                <iframe
+                  src="https://open.spotify.com/embed/playlist/37i9dQZF1DX0XUsuxWHRQd"
+                  width="100%"
+                  height="380"
+                  title="Spotify playlist 2"
+                  loading="lazy"
+                  style={{ border: 0 }}
+                  allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                ></iframe>
+              </div>
+            </div>
+
           </div>
         </div>
       </div>

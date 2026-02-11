@@ -152,6 +152,21 @@
     transition: 0.5s;
 }
 
+.works-in-progress {
+    width: 700px;
+    text-align: center;
+}
+
+.works-in-progress h1 {
+    font-family: 'cursive', 'Lucida Handwriting';
+}
+
+.works-in-progress li {
+    text-align: left;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 3px;
+}
+
 @media(max-width: 768px) {
     .about {
         gap: 80px;

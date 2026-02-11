@@ -66,6 +66,12 @@ const About = () => {
                     </div>
                 </div>
         </div>
+        <div className="works-in-progress">
+            <h1>currently working on:</h1>
+            <li>otamotone</li>
+            <li>sub-30s 3x3 rubik's cube</li>
+            <li>this!</li>
+        </div>
     </div>
   )
 }

@@ -23,8 +23,8 @@ const Footer = () => {
         <div className="footer-bottom">
             <p className="footer-bottom-left">✞<br></br>soli deo gloria</p>
             <div className="footer-bottom-right">
-                <p>"My flesh and my heart may fail, <br></br>
-                    but <span>God is the strength of my heart</span> and my portion forever." <br />~Ps. 76:23 ESV</p>
+                <p>My flesh and my heart may fail, <br></br>
+                    but <span>God is the strength of my heart</span> and my portion forever. <br />~Ps. 76:23 ESV</p>
             </div>
         </div>
     </div>
