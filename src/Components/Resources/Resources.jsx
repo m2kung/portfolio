@@ -5,7 +5,7 @@ import mywork_data from '../../assets/mywork_data'
 import arrow_icon from '../../assets/arrow_icon.svg'
 import { Link } from 'react-router-dom'
 
-const Projectstest = () => {
+const Resources = () => {
 
   return (
     <div className='mywork' id='resources'>
@@ -16,7 +16,7 @@ const Projectstest = () => {
       <div className="mywork-container">
           {mywork_data.map((work,index)=>{
             return (
-              <Link className="anchor" to="/resources" key={index}>
+              <Link className="anchor" to={work.w_page} key={index}>
                 <img src={work.w_img} alt="" />
               </Link>
             );
@@ -30,4 +30,4 @@ const Projectstest = () => {
   )
 }
 
-export default Projectstest
+export default Resources
