@@ -66,6 +66,7 @@
 }
 
 .services-format h2 {
+    font-size: 38px;
     font-weight: 800;
     background: linear-gradient(270deg, #2f86bc 50%, #9d15ff 100%);
     background-clip: text;
